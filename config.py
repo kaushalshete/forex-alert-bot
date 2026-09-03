@@ -54,15 +54,36 @@ APPEND_PRICE_TO_ALERT = os.environ.get("APPEND_PRICE_TO_ALERT", "0") == "1"
 
 GIT_PUSH = os.environ.get("GIT_PUSH", "1") == "1"
 
-_PAIR_LIST = [
-    "EURUSD", "GBPUSD", "USDJPY", "USDCHF", "USDCAD", "AUDUSD", "NZDUSD",
-    "EURGBP", "EURJPY", "EURCHF", "EURAUD", "EURCAD", "EURNZD",
-    "GBPJPY", "GBPCHF", "GBPAUD", "GBPCAD", "GBPNZD",
-    "AUDJPY", "AUDCHF", "AUDCAD", "AUDNZD",
-    "NZDJPY", "NZDCHF", "NZDCAD",
-    "CADJPY", "CADCHF", "CHFJPY",
+# The whitelist of tradable symbols, written the way Twelve Data names them.
+# Nothing outside this list can be parsed out of a Telegram message or polled.
+ALLOWED_PAIRS = [
+    # Majors, metals and crypto.
+    "EUR/USD", "GBP/USD", "AUD/USD", "NZD/USD",
+    "USD/JPY", "USD/CAD", "USD/CHF",
+    "XAU/USD", "XAG/USD", "BTC/USD",
+    # Crosses.
+    "EUR/GBP", "EUR/JPY", "EUR/CHF", "EUR/AUD", "EUR/CAD", "EUR/NZD",
+    "GBP/JPY", "GBP/CHF", "GBP/AUD", "GBP/CAD", "GBP/NZD",
+    "AUD/JPY", "AUD/CHF", "AUD/CAD", "AUD/NZD",
+    "NZD/JPY", "NZD/CHF", "NZD/CAD",
+    "CAD/JPY", "CAD/CHF", "CHF/JPY",
 ]
-PAIRS = {p: (p[:3], p[3:]) for p in _PAIR_LIST}
+
+# Internally a pair is the slashless key ("EURUSD"); the slash only comes back
+# when we talk to Twelve Data. Both views are derived from ALLOWED_PAIRS so the
+# whitelist is edited in exactly one place.
+PAIRS = {}
+for _symbol in ALLOWED_PAIRS:
+    _base, _quote = _symbol.split("/")
+    PAIRS[_base + _quote] = (_base, _quote)
+
+# A "pip" only means the usual thing for currencies. Metals and crypto move in
+# far bigger increments, so ZONE_PIP_BUFFER would be meaningless without these.
+PIP_SIZES = {
+    "XAUUSD": 0.1,
+    "XAGUSD": 0.01,
+    "BTCUSD": 1.0,
+}
 
 TIMEFRAMES = {
     "1m":  {"td": "1min",  "seconds": 60,    "spoken": "1 minute"},
@@ -88,7 +109,12 @@ TIMEFRAME_ALIASES = {
 
 
 def pip_size(pair):
-    """JPY crosses quote to 2 decimals, everything else to 4."""
+    """JPY crosses quote to 2 decimals, everything else to 4.
+
+    Metals and crypto are the exceptions listed in PIP_SIZES.
+    """
+    if pair in PIP_SIZES:
+        return PIP_SIZES[pair]
     return 0.01 if pair.endswith("JPY") else 0.0001
 
 
