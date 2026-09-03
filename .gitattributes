@@ -1,0 +1,2 @@
+state/alerts.db binary
+state/alerts.db -diff -merge

@@ -1,0 +1,73 @@
+name: Forex alerts
+
+on:
+  # 5 minutes is GitHub's floor for scheduled workflows, and scheduled runs are
+  # best effort so they can arrive late or be dropped entirely. The cron here is
+  # only a watchdog: each job then ticks internally every TICK_SECONDS for
+  # LOOP_MINUTES, which is what actually gives near real time alerting.
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      loop_minutes:
+        description: 'Minutes to keep ticking inside this run (0 = single pass)'
+        required: false
+        default: '50'
+
+permissions:
+  contents: write
+
+# Only one job may touch the state file at a time. Queued runs are held, so
+# when the running job ends its replacement starts immediately.
+concurrency:
+  group: forex-alerts
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+      LOOP_MINUTES: ${{ github.event.inputs.loop_minutes || '50' }}
+      TICK_SECONDS: '60'
+      DAILY_CREDIT_BUDGET: '700'
+      REQUESTS_PER_MINUTE: '7'
+      CANDLE_LAG_SECONDS: '20'
+      ZONE_POLL_SECONDS: '0'          # 0 = derive from the remaining credit budget
+      APPEND_PRICE_TO_ALERT: '0'      # 1 appends the price to the spoken sentence
+      COMMIT_INTERVAL_SECONDS: '600'
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # Full history so the rebase before pushing state cannot fail.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Poll Telegram, check alerts, persist state
+        run: python main.py
+
+      - name: Commit any state left behind
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain -- state)" ]; then
+            git add -- state
+            git commit -m "state: workflow backstop [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No leftover state to commit."
+          fi
