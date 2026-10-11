@@ -1632,3 +1632,38 @@ To https://github.com/kaushalshete/forex-alert-bot
 2026-10-11T00:31:47+00:00 Starting run. loop_minutes=50 tick=60s active_alerts=0 credits_used=0
 2026-10-11T00:41:55+00:00 State committed and pushed (tick).
 2026-10-11T00:52:05+00:00 State committed and pushed (tick).
+2026-10-11T01:02:12+00:00 State committed and pushed (tick).
+2026-10-11T01:11:32+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:33+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:33+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:33+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:34+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:34+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:34+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:35+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:35+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:35+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:36+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:36+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:36+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:37+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:37+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:37+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:38+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:38+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:38+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:39+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:39+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:39+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:40+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:40+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:40+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:41+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:41+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:41+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:42+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:42+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:42+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:43+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:43+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-11T01:11:43+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
