@@ -2208,3 +2208,4 @@ To https://github.com/kaushalshete/forex-alert-bot
 2026-10-22T15:24:00+00:00 State committed and pushed (tick).
 2026-10-22T15:32:50+00:00 State committed and pushed (final).
 2026-10-22T15:32:50+00:00 Run complete.
+2026-10-22T18:52:50+00:00 Starting run. loop_minutes=50 tick=60s active_alerts=0 credits_used=0
