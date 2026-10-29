@@ -2568,3 +2568,5 @@ To https://github.com/kaushalshete/forex-alert-bot
 2026-10-29T14:37:22+00:00 Starting run. loop_minutes=50 tick=60s active_alerts=0 credits_used=0
 2026-10-29T14:47:38+00:00 State committed and pushed (tick).
 2026-10-29T14:57:49+00:00 State committed and pushed (tick).
+2026-10-29T15:07:55+00:00 State committed and pushed (tick).
+2026-10-29T15:09:46+00:00 getUpdates failed, will retry: network error calling getUpdates: <urlopen error [Errno 104] Connection reset by peer>
