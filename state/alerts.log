@@ -2619,3 +2619,46 @@ To https://github.com/kaushalshete/forex-alert-bot
 2026-10-31T00:41:10+00:00 Starting run. loop_minutes=50 tick=60s active_alerts=0 credits_used=0
 2026-10-31T00:51:23+00:00 State committed and pushed (tick).
 2026-10-31T01:01:30+00:00 State committed and pushed (tick).
+2026-10-31T01:11:38+00:00 State committed and pushed (tick).
+2026-10-31T01:12:18+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:18+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:18+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:19+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:19+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:19+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:20+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:20+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:20+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:21+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:21+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:21+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:22+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:22+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:22+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:23+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:23+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:23+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:23+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:24+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:24+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:25+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:25+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:25+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:26+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:26+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:26+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:26+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:27+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:27+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:28+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:28+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:28+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:28+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:29+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:29+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:30+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:30+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:30+00:00 getUpdates failed, will retry: HTTP 502 from getUpdates: {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2026-10-31T01:12:57+00:00 getUpdates failed, will retry: network error calling getUpdates: The read operation timed out
+2026-10-31T01:13:23+00:00 getUpdates failed, will retry: network error calling getUpdates: The read operation timed out
+2026-10-31T01:14:13+00:00 getUpdates failed, will retry: network error calling getUpdates: The read operation timed out
